@@ -27,7 +27,9 @@ jobs:
         run: mvn versions:set -DnewVersion=${{ github.event.release.tag_name }} -DgenerateBackupPoms=false
 
       - name: Deploy to Maven Central
-        run: mvn deploy -Prelease -DskipTests
+        run: |
+          export GPG_TTY=$(tty) || true
+          mvn deploy -Prelease -DskipTests
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
