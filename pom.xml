@@ -6,7 +6,7 @@
 
     <groupId>org.treblereel.j2cl.platform</groupId>
     <artifactId>bom</artifactId>
-    <version>20260527-1</version>
+    <version>20260906-1</version>
     <packaging>pom</packaging>
 
     <name>J2CL Platform BOM</name>
@@ -51,8 +51,8 @@
     </scm>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <maven.compiler.plugin>3.15.0</maven.compiler.plugin>
@@ -60,19 +60,19 @@
         <maven.license.plugin>3.0</maven.license.plugin>
         <maven.javadoc.plugin>3.12.0</maven.javadoc.plugin>
         <maven.source.plugin>3.4.0</maven.source.plugin>
-        <maven.j2cl.plugin>0.23.8</maven.j2cl.plugin>
+        <maven.j2cl.plugin>0.24.1</maven.j2cl.plugin>
 
         <maven.deploy.plugin>2.8.2</maven.deploy.plugin>
-        <maven.gpg.plugin>1.6</maven.gpg.plugin>
+        <maven.gpg.plugin>3.2.7</maven.gpg.plugin>
         <maven.release.plugin>2.5.3</maven.release.plugin>
         <maven.scm.provider.gitexe>1.9.5</maven.scm.provider.gitexe>
 
-        <j2cl.version>v20260527-1</j2cl.version>
+        <j2cl.version>v20260906-1</j2cl.version>
 
         <elemental2.version>1.3.2</elemental2.version>
         <jsinterop.annotations.version>2.1.0</jsinterop.annotations.version>
-        <jsinterop.base.version>1.1.1</jsinterop.base.version>
-        <jakarta4g.version>0.7</jakarta4g.version>
+        <jsinterop.base.version>1.2.0</jsinterop.base.version>
+        <jakarta4g.version>0.9</jakarta4g.version>
 
         <junit.version>4.13.2</junit.version>
     </properties>
@@ -143,23 +143,23 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.kie.j2cl.tools</groupId>
+                <groupId>org.treblereel.j2cl</groupId>
                 <artifactId>junit-annotations</artifactId>
                 <version>${j2cl.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.kie.j2cl.tools</groupId>
+                <groupId>org.treblereel.j2cl</groupId>
                 <artifactId>gwttestcase-emul</artifactId>
                 <version>${j2cl.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.kie.j2cl.tools</groupId>
+                <groupId>org.treblereel.j2cl</groupId>
                 <artifactId>gwttestcase-emul</artifactId>
                 <version>${j2cl.version}</version>
                 <classifier>sources</classifier>
             </dependency>
             <dependency>
-                <groupId>org.kie.j2cl.tools</groupId>
+                <groupId>org.treblereel.j2cl</groupId>
                 <artifactId>junit-emul</artifactId>
                 <version>${j2cl.version}</version>
             </dependency>
@@ -201,7 +201,7 @@
                     <version>${maven.license.plugin}</version>
                 </plugin>
                 <plugin>
-                    <groupId>org.kie.j2cl.tools</groupId>
+                    <groupId>org.treblereel.j2cl.plugin</groupId>
                     <artifactId>j2cl-maven-plugin</artifactId>
                     <version>${maven.j2cl.plugin}</version>
                 </plugin>
