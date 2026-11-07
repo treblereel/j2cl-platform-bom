@@ -60,7 +60,7 @@
         <maven.license.plugin>3.0</maven.license.plugin>
         <maven.javadoc.plugin>3.12.0</maven.javadoc.plugin>
         <maven.source.plugin>3.4.0</maven.source.plugin>
-        <maven.j2cl.plugin>0.24.1</maven.j2cl.plugin>
+        <maven.j2cl.plugin>0.24.2</maven.j2cl.plugin>
 
         <maven.deploy.plugin>2.8.2</maven.deploy.plugin>
         <maven.gpg.plugin>3.2.7</maven.gpg.plugin>
